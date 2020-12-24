@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Andika+New+Basic&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body{
+    background-color: #4E59AD;
+}
+
+.card{
+    background-color: white;
+    box-shadow: 0 10px 25px rgba(0,0,0,.5);
+    border-radius: 4px;
+    padding: 15px;
+    width: 28rem;
+    margin: 1.5rem auto;
+}
+
+.card-content{
+    width:87%;
+    margin: .8rem auto 0;
+}
+h3{
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 1.5rem;
+}
+.social{
+    margin: .9rem 0;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+}
+
+.fb{
+    color : white;
+    width:49.3%;
+    background-color : #3B5998;
+    margin: 0.15rem 0;
+    padding : .6rem;
+    font-size: .9rem;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    cursor: pointer;
+    transition:  .3s ease;
+}
+
+.fb:hover{
+    background-color : #2e477c;
+}
+
+.google{
+    margin: 0.15rem 0;
+    color : white;
+    width:49.3%;
+    background-color : #DD4B39;
+    padding : .6rem;
+    font-size: .9rem;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    cursor: pointer;
+    transition:  .3s ease;
+}
+
+.google:hover{
+    background-color : #be4030;
+}
+
+form {
+    margin-top: 1rem;
+}
+
+.Email {
+    padding : 0.3rem;
+    width:100%;
+    margin : .5rem 0 .3rem;
+    font-family: 'Andika New Basic', sans-serif;
+    outline: none;
+    border: rgb(218, 217, 217) 1px solid;
+}
+
+.Password {
+    padding : 0.3rem;
+    width:100%;
+    margin : .3rem 0 .5rem;
+    font-family: 'Andika New Basic', sans-serif;
+    outline: none;
+    border: rgb(218, 217, 217) 1px solid;
+}
+
+.Login {
+    font-family: 'Roboto Condensed', sans-serif;
+    width: 100%;
+    padding:.5rem;
+    background-color: #32C5D2;
+    border: none;
+    font-weight: 700;
+    color: white;
+    cursor: pointer;
+    transition:  .3s ease;
+}
+
+.Login:hover{
+    background-color: #2aaab6;
+}
+
+form div{
+    margin-top: .5rem;
+    text-align: right;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 300;
+    cursor: pointer;
+}
+
+form div:hover{
+   color: #32C5D2;
+}
+
+.bottom{
+    display: flex;
+    justify-content: space-between;
+    background-color: #F7F7F7;
+    /* padding : .5rem 0; */
+    width:96%;
+    margin: 1rem auto;
+}
+
+.text{
+    margin: .4rem 0;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 300;
+    color:rgb(87, 86, 86);
+}
+
+.signup{
+    width:7rem;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 700;
+    outline: none;
+    border : 2px solid rgb(85, 84, 84);
+    cursor: pointer;
+    padding: .4rem;
+}
+
+.signup:hover{
+    background-color:rgb(85, 84, 84);
+    color: white;
+}
+
+@media only screen and (max-width: 500px) {
+    .card{
+        width:85%;
+    }
+
+    .social{
+        flex-direction: column;
+    }
+
+    .fb{
+        width: 100%;
+    }
+
+    .google{
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width :390px){
+    .bottom{
+        height: max-content;
+        flex-direction:column ;
+    }
+}
